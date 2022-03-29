@@ -13,7 +13,7 @@ def chooseCave():
     while True:
         print('Which cave will you go into? (1 to 10 )')
         cave = input()
-        print(cave)
+        #print(cave)
         if cave.isdigit() and 1 < int(cave) <= 10 : #判斷是不是數字 cave.isdigit()
             break
     return cave
@@ -28,7 +28,7 @@ def checkCave(chosenCave):
     time.sleep(2)
 
     badCave = int()
-    if badCave> 3 and badCave%2 == 0:
+    if badCave<=3 and badCave%2 == 0:
         badCave = random.randint(3,9)
     #print(badCave)
     badDragon = [] #壞龍的陣列
