@@ -41,7 +41,7 @@ def checkCave(chosenCave):
          print('Gives you his treasure!')
     else:
          print('Gobbles you down in one bite!')
-
+#主程式
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y' or playAgain == 'Y' or playAgain == 'YES' :
     displayIntro()
