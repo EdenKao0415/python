@@ -27,11 +27,11 @@ def checkCave(chosenCave):
     print()
     time.sleep(2)
 
+    badDragon = [] #壞龍的陣列
     badCave = int()
-    if badCave<=3 or badCave%2 == 0:
+    while badCave%2 == 0:
         badCave = random.randint(3,9)
     #print(badCave)
-    badDragon = [] #壞龍的陣列
     while len(badDragon)< badCave : # len()查看陣列裡面的數量 有沒有<friendlyCave
         num = random.randint(1,10)
         if num not in badDragon : # num 亂數不再龍洞的陣列裡
