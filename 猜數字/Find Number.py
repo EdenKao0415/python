@@ -7,7 +7,7 @@ max = int(input())
 num = random.randint(min, max)
 
 
-def test ():
+def main ():
     i = int(0)
     while i < 5:
         print('請輸入猜的數字\n'+'還可以猜的次數'+ str(5-i))
@@ -27,7 +27,7 @@ def test ():
             if i == 5 :
                 print('再加把勁'+'\n正確答案是\n'+str(num))
 
-test()
+main()
 
 
 
