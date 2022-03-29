@@ -10,10 +10,11 @@ is greedy and hungry, and will eat you on sight.''')
 
 def chooseCave():
     cave = ''
-    while cave != '1' and cave != '2' and cave != '3' and cave != '4' and cave != '5' \
-            and cave != '6' and cave != '7' and cave != '8' and cave != '9' and cave != '10' :
+    while True:
         print('Which cave will you go into? (1 to 10 )')
         cave = input()
+        if '0' < cave <= '10':
+            break
     return cave
 
 def checkCave(chosenCave):
