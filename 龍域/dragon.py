@@ -27,12 +27,12 @@ def checkCave(chosenCave):
     print()
     time.sleep(2)
 
-    friendlyCave = random.randint(3, 9)
-    if friendlyCave%2 ==0 :
-        friendlyCave = random.randint(3,9)
-    #print(friendlyCave)
+    badCave = random.randint(3, 9)
+    if badCave%2 ==0 :
+        badCave = random.randint(3,9)
+    #print(badCave)
     badDragon = [] #壞龍的陣列
-    while len(badDragon)< friendlyCave : # len()查看陣列裡面的數量 有沒有<friendlyCave
+    while len(badDragon)< badCave : # len()查看陣列裡面的數量 有沒有<friendlyCave
         num = random.randint(1,10)
         if num not in badDragon : # num 亂數不再龍洞的陣列裡
             badDragon.append(num) #把亂數存到壞讀歐惡真列
@@ -50,6 +50,5 @@ while playAgain == 'yes' or playAgain == 'y' or playAgain == 'Y' or playAgain ==
 
     print('Do you want to play again? (yes or no)')
     playAgain = input()
-    if  playAgain != 'yes' or playAgain != 'y' \
-            or playAgain != 'Y' or playAgain != 'YES' :
-        print('我做的哈哈')
+if playAgain != 'yes' or playAgain != 'y' or playAgain != 'Y' or playAgain != 'YES':
+    print('我做的哈哈')
