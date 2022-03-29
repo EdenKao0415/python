@@ -13,7 +13,8 @@ def chooseCave():
     while True:
         print('Which cave will you go into? (1 to 10 )')
         cave = input()
-        if '0' < cave <= '10':
+        print(cave)
+        if cave.isdigit() and 1 < int(cave) <= 10 : #判斷是不是數字 cave.isdigit()
             break
     return cave
 
@@ -29,13 +30,13 @@ def checkCave(chosenCave):
     friendlyCave = random.randint(3, 9)
     if friendlyCave%2 ==0 :
         friendlyCave = random.randint(3,9)
-    print(friendlyCave)
+    #print(friendlyCave)
     badDragon = [] #壞龍的陣列
     while len(badDragon)< friendlyCave : # len()查看陣列裡面的數量 有沒有<friendlyCave
         num = random.randint(1,10)
         if num not in badDragon : # num 亂數不再龍洞的陣列裡
             badDragon.append(num) #把亂數存到壞讀歐惡真列
-    print(badDragon)
+    #print(badDragon)
     if chosenCave != str(badDragon):
          print('Gives you his treasure!')
     else:
@@ -49,5 +50,6 @@ while playAgain == 'yes' or playAgain == 'y' or playAgain == 'Y' or playAgain ==
 
     print('Do you want to play again? (yes or no)')
     playAgain = input()
-    if playAgain == 'N'or playAgain == 'n' or playAgain == 'No' or playAgain == 'NO':
+    if  playAgain != 'yes' or playAgain != 'y' \
+            or playAgain != 'Y' or playAgain != 'YES' :
         print('我做的哈哈')
