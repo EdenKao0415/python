@@ -27,8 +27,8 @@ def checkCave(chosenCave):
     print()
     time.sleep(2)
 
-    badCave = random.randint(3, 9)
-    if badCave%2 ==0 :
+    badCave = int()
+    if badCave> 3 and badCave%2 == 0:
         badCave = random.randint(3,9)
     #print(badCave)
     badDragon = [] #壞龍的陣列
